@@ -1,0 +1,65 @@
+// Font family Variables
+$primary-font          : "Titillium Web", "Open Sans", sans-serif;
+$secondary-font 		: Arial, sans-serif;
+
+
+// Color Variables
+$accent-color          : #EEA300;
+$color				   : #999;
+$secondary-color       : #1b1b1b;
+$secondary-light-color : #242424;
+$strong-color          : #383737;
+$body-color            : #929292;
+
+
+
+
+ 
+ /* button */
+ .button{
+ 	display: inline-block;
+ 	padding: 10px 30px;
+ 	background-color: $accent-color;
+ 	color: white;
+ 	font-family: $primary-font;
+ 	transition: .3s ease;
+
+ 	&.invert{
+ 		background-color: white;
+ 		color: $accent-color;
+ 		font-weight: 700;
+
+ 		&:hover{
+ 			background-color: rgba(255,255,255,.8);
+ 		}
+ 	}
+
+ 	&:hover{
+ 		background-color: lighten($accent-color,8%);
+ 	}
+ }
+
+
+
+
+.map{
+	min-height: 350px;
+
+	img{
+		width: 100%;
+		height: 400px;
+	}
+
+}
+address{
+	background: $secondary-color;
+	color: white;
+	font-family: $primary-font;
+	border-bottom: 3px solid $accent-color;
+	padding: 10px 20px;
+
+	a{
+		color: white;
+		margin-left: 20px;
+	}
+}
